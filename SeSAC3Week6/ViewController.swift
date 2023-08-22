@@ -16,11 +16,17 @@ import UIKit
 // Frame의 한계
 // AutoResizingMask, AutoLayout => 스토리보드 대응
 // NSLayoutConstraints => 코드베이스 대응
+//   1. isActive
+//   2. add constraints
+//   3. NSLayoutAnchor
+// NSLayoutAnchor
+// snapKit
 
 class ViewController: UIViewController {
 
     let emailTextField = UITextField()
     let passwordTextField = UITextField()
+    let signButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +51,55 @@ class ViewController: UIViewController {
         passwordTextField.translatesAutoresizingMaskIntoConstraints = false
         passwordTextField.backgroundColor = .brown
         
-        NSLayoutConstraint(
+        // MARK: - Is Active
+        
+//        NSLayoutConstraint(
+//            item: passwordTextField,
+//            attribute: .leading,
+//            relatedBy: .equal,
+//            toItem: view.safeAreaLayoutGuide,
+//            attribute: .leading,
+//            multiplier: 1.0,
+//            constant: 50.0
+//        )
+//        .isActive = true    // 레이아웃 활성화
+//
+//        NSLayoutConstraint(
+//            item: passwordTextField,
+//            attribute: .trailing,
+//            relatedBy: .equal,
+//            toItem: view.safeAreaLayoutGuide,
+//            attribute: .trailing,
+//            multiplier: 1.0,
+//            constant: -50.0
+//        )
+//        .isActive = true
+//
+//        NSLayoutConstraint(
+//            item: passwordTextField,
+//            attribute: .height,
+//            relatedBy: .equal,
+//            toItem: nil,
+//            attribute: .height,
+//            multiplier: 1.0,
+//            constant: 60.0
+//        )
+//        .isActive = true
+//
+//        NSLayoutConstraint(
+//            item: passwordTextField,
+//            attribute: .top,
+//            relatedBy: .equal,
+//            toItem: emailTextField,
+//            attribute: .bottom,
+//            multiplier: 1.0,
+//            constant: 50.0
+//        )
+//        .isActive = true
+        
+        // MARK: - Add Constraint
+        
+        let leading = NSLayoutConstraint(
             item: passwordTextField,
             attribute: .leading,
             relatedBy: .equal,
@@ -54,9 +108,8 @@ class ViewController: UIViewController {
             multiplier: 1.0,
             constant: 50.0
         )
-        .isActive = true    // 레이아웃 활성화
         
-        NSLayoutConstraint(
+        let trailing = NSLayoutConstraint(
             item: passwordTextField,
             attribute: .trailing,
             relatedBy: .equal,
@@ -65,9 +118,8 @@ class ViewController: UIViewController {
             multiplier: 1.0,
             constant: -50.0
         )
-        .isActive = true
         
-        NSLayoutConstraint(
+        let height = NSLayoutConstraint(
             item: passwordTextField,
             attribute: .height,
             relatedBy: .equal,
@@ -76,9 +128,8 @@ class ViewController: UIViewController {
             multiplier: 1.0,
             constant: 60.0
         )
-        .isActive = true
         
-        NSLayoutConstraint(
+        let top = NSLayoutConstraint(
             item: passwordTextField,
             attribute: .top,
             relatedBy: .equal,
@@ -87,6 +138,42 @@ class ViewController: UIViewController {
             multiplier: 1.0,
             constant: 50.0
         )
-        .isActive = true
+        
+        view.addConstraints([
+            leading,
+            trailing,
+            height,
+            top
+        ])
+        
+        setNSLayoutAnchor()
+    }
+    
+    @objc
+    func signButtonClicked() {
+        
+        let vc = TextViewController()
+        
+        present(vc, animated: true)
+    }
+    
+    func setNSLayoutAnchor() {
+        view.addSubview(signButton)
+        signButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        signButton.backgroundColor = .blue
+        
+        signButton.addTarget(
+            self,
+            action: #selector(signButtonClicked),
+            for: .touchUpInside
+        )
+        
+        NSLayoutConstraint.activate([
+            signButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            signButton.widthAnchor.constraint(equalToConstant: 300.0),
+            signButton.heightAnchor.constraint(equalToConstant: 50.0),
+            signButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
     }
 }
