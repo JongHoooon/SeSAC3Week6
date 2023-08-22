@@ -154,7 +154,8 @@ class ViewController: UIViewController {
         
 //        let vc = TextViewController()
         
-        let vc = LocationViewController()
+//        let vc = LocationViewController()
+        let vc = Example1ViewController()
         
         present(vc, animated: true)
     }
