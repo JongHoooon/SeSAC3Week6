@@ -64,15 +64,12 @@
 		ED4BD0532A9309FF009C81EC /* SeSAC3Week6 */ = {
 			isa = PBXGroup;
 			children = (
-				ED4BD0542A9309FF009C81EC /* AppDelegate.swift */,
-				ED4BD0562A9309FF009C81EC /* SceneDelegate.swift */,
-				ED4BD0582A9309FF009C81EC /* ViewController.swift */,
-				EDCCD8472A944658006EDC06 /* Test */,
-				ED0E03112A947924002817C9 /* LocationViewController.swift */,
+				EDE518282A94987C00C16C9E /* Application */,
 				ED4BD05A2A9309FF009C81EC /* Main.storyboard */,
-				ED4BD05D2A930A00009C81EC /* Assets.xcassets */,
-				ED4BD05F2A930A00009C81EC /* LaunchScreen.storyboard */,
-				ED4BD0622A930A00009C81EC /* Info.plist */,
+				ED4BD0582A9309FF009C81EC /* ViewController.swift */,
+				ED0E03112A947924002817C9 /* LocationViewController.swift */,
+				EDCCD8472A944658006EDC06 /* Test */,
+				EDE518292A94988600C16C9E /* Resources */,
 			);
 			path = SeSAC3Week6;
 			sourceTree = "<group>";
@@ -84,6 +81,25 @@
 				ED0E030F2A945CAC002817C9 /* TextViewController.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		EDE518282A94987C00C16C9E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ED4BD0542A9309FF009C81EC /* AppDelegate.swift */,
+				ED4BD0562A9309FF009C81EC /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EDE518292A94988600C16C9E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED4BD05D2A930A00009C81EC /* Assets.xcassets */,
+				ED4BD05F2A930A00009C81EC /* LaunchScreen.storyboard */,
+				ED4BD0622A930A00009C81EC /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,7 +333,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82J7RU93V4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SeSAC3Week6/Info.plist;
+				INFOPLIST_FILE = SeSAC3Week6/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,7 +361,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82J7RU93V4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SeSAC3Week6/Info.plist;
+				INFOPLIST_FILE = SeSAC3Week6/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
