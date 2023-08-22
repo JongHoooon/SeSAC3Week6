@@ -19,6 +19,9 @@
 		EDCCD8462A94463F006EDC06 /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCD8452A94463F006EDC06 /* SnapViewController.swift */; };
 		EDE5182C2A94991200C16C9E /* Example1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5182B2A94991200C16C9E /* Example1ViewController.swift */; };
 		EDE5182E2A949A3400C16C9E /* Example1TextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5182D2A949A3400C16C9E /* Example1TextFiled.swift */; };
+		EDE518322A94A90100C16C9E /* Example2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518312A94A90100C16C9E /* Example2ViewController.swift */; };
+		EDE518342A94AAC600C16C9E /* Exampl2Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518332A94AAC600C16C9E /* Exampl2Images.swift */; };
+		EDE518362A94AD0600C16C9E /* ProfileButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518352A94AD0600C16C9E /* ProfileButtonConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		EDCCD8452A94463F006EDC06 /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 		EDE5182B2A94991200C16C9E /* Example1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1ViewController.swift; sourceTree = "<group>"; };
 		EDE5182D2A949A3400C16C9E /* Example1TextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1TextFiled.swift; sourceTree = "<group>"; };
+		EDE518312A94A90100C16C9E /* Example2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example2ViewController.swift; sourceTree = "<group>"; };
+		EDE518332A94AAC600C16C9E /* Exampl2Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exampl2Images.swift; sourceTree = "<group>"; };
+		EDE518352A94AD0600C16C9E /* ProfileButtonConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButtonConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,9 @@
 		EDE518302A94A8D300C16C9E /* Example2 */ = {
 			isa = PBXGroup;
 			children = (
+				EDE518312A94A90100C16C9E /* Example2ViewController.swift */,
+				EDE518352A94AD0600C16C9E /* ProfileButtonConfiguration.swift */,
+				EDE518332A94AAC600C16C9E /* Exampl2Images.swift */,
 			);
 			path = Example2;
 			sourceTree = "<group>";
@@ -213,10 +222,13 @@
 				ED0E03102A945CAC002817C9 /* TextViewController.swift in Sources */,
 				EDE5182C2A94991200C16C9E /* Example1ViewController.swift in Sources */,
 				EDCCD8462A94463F006EDC06 /* SnapViewController.swift in Sources */,
+				EDE518362A94AD0600C16C9E /* ProfileButtonConfiguration.swift in Sources */,
 				ED4BD0592A9309FF009C81EC /* ViewController.swift in Sources */,
 				ED0E03122A947924002817C9 /* LocationViewController.swift in Sources */,
 				ED4BD0552A9309FF009C81EC /* AppDelegate.swift in Sources */,
 				ED4BD0572A9309FF009C81EC /* SceneDelegate.swift in Sources */,
+				EDE518322A94A90100C16C9E /* Example2ViewController.swift in Sources */,
+				EDE518342A94AAC600C16C9E /* Exampl2Images.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
