@@ -157,8 +157,10 @@ class ViewController: UIViewController {
 //        let vc = LocationViewController()
 //        let vc = Example1ViewController()
         
-        let vc = UINavigationController(rootViewController: Example2ViewController())
+//        let vc = UINavigationController(rootViewController: Example2ViewController())
+        let vc = UINavigationController(rootViewController: Example3ViewController())
         vc.modalPresentationStyle = .fullScreen
+        
         
         present(vc, animated: true)
     }
