@@ -49,6 +49,7 @@ final class TheaterViewController: UIViewController {
         configureNavigationBar()
         configureLayout()
         configureLocationManager()
+        configureMap()
         addActions()
         
         checkDeviceLocationAuthoriazation()
@@ -177,7 +178,54 @@ private extension TheaterViewController {
 }
 
 // MARK: - Map
+extension TheaterViewController: MKMapViewDelegate {
+    
+    func mapView(
+        _ mapView: MKMapView,
+        viewFor annotation: MKAnnotation
+    ) -> MKAnnotationView? {
+        guard !annotation.isKind(of: MKUserLocation.self) else {
+            return nil
+        }
+        
+        var annotationView = self.mapView.dequeueReusableAnnotationView(withIdentifier: "Custom")
+        
+        if annotationView == nil {
+            annotationView = MKAnnotationView(
+                annotation: annotation,
+                reuseIdentifier: "Custom"
+            )
+            annotationView?.canShowCallout = true
+            
+            
+            let iconButton = UIButton(frame: CGRect(
+                x: 0,
+                y: 0,
+                width: 20.0,
+                height: 20.0
+            ))
+            iconButton.setImage(
+                UIImage(systemName: "popcorn.fill"),
+                for: .normal
+            )
+            iconButton.tintColor = .black
+            annotationView?.rightCalloutAccessoryView = iconButton
+        } else {
+            annotationView?.annotation = annotation
+        }
+        annotationView?.image = UIImage(named: "projector")
+            
+        return annotationView
+    }
+    
+    
+}
+
 private extension TheaterViewController {
+    
+    func configureMap() {
+        mapView.delegate = self
+    }
     
     /// 매개변수 기본값 위치: 청년취업사관학교 영등포 캠퍼스
     func setMapRegion(
