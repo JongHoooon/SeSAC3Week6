@@ -162,7 +162,7 @@ class ViewController: UIViewController {
 //        let vc = UINavigationController(rootViewController: Example3ViewController())
 //        vc.modalPresentationStyle = .fullScreen
         
-        let vc = UINavigationController(rootViewController: CinemaViewController())
+        let vc = UINavigationController(rootViewController: TheaterViewController())
         vc.modalPresentationStyle = .fullScreen
         
         present(vc, animated: true)
