@@ -154,16 +154,18 @@ class ViewController: UIViewController {
         
 //        let vc = TextViewController()
         
-        let vc = LocationViewController()
-        let nav = UINavigationController(rootViewController: vc)
+//        let vc = LocationViewController()
+//        let nav = UINavigationController(rootViewController: vc)
 //        let vc = Example1ViewController()
         
 //        let vc = UINavigationController(rootViewController: Example2ViewController())
 //        let vc = UINavigationController(rootViewController: Example3ViewController())
 //        vc.modalPresentationStyle = .fullScreen
         
+        let vc = UINavigationController(rootViewController: CinemaViewController())
+        vc.modalPresentationStyle = .fullScreen
         
-        present(nav, animated: true)
+        present(vc, animated: true)
     }
     
     func setNSLayoutAnchor() {

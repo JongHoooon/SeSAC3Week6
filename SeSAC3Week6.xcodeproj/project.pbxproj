@@ -27,6 +27,7 @@
 		EDE5183F2A94F11000C16C9E /* TextChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5183E2A94F11000C16C9E /* TextChatTableViewCell.swift */; };
 		EDE518412A94F11B00C16C9E /* ImageChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518402A94F11B00C16C9E /* ImageChatTableViewCell.swift */; };
 		EDE518432A94F2E800C16C9E /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518422A94F2E800C16C9E /* ReusableProtocol.swift */; };
+		EDE518452A95CCF600C16C9E /* CinemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518442A95CCF600C16C9E /* CinemaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		EDE5183E2A94F11000C16C9E /* TextChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextChatTableViewCell.swift; sourceTree = "<group>"; };
 		EDE518402A94F11B00C16C9E /* ImageChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageChatTableViewCell.swift; sourceTree = "<group>"; };
 		EDE518422A94F2E800C16C9E /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
+		EDE518442A95CCF600C16C9E /* CinemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,10 +128,10 @@
 		EDE5182A2A94990000C16C9E /* Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				EDE518372A94D7C400C16C9E /* New Group */,
 				EDE5182F2A94A31500C16C9E /* Example1 */,
 				EDE518302A94A8D300C16C9E /* Example2 */,
 				EDE518382A94D82C00C16C9E /* Example3 */,
+				EDE518372A94D7C400C16C9E /* Cinema */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -153,11 +155,12 @@
 			path = Example2;
 			sourceTree = "<group>";
 		};
-		EDE518372A94D7C400C16C9E /* New Group */ = {
+		EDE518372A94D7C400C16C9E /* Cinema */ = {
 			isa = PBXGroup;
 			children = (
+				EDE518442A95CCF600C16C9E /* CinemaViewController.swift */,
 			);
-			path = "New Group";
+			path = Cinema;
 			sourceTree = "<group>";
 		};
 		EDE518382A94D82C00C16C9E /* Example3 */ = {
@@ -268,6 +271,7 @@
 				ED4BD0592A9309FF009C81EC /* ViewController.swift in Sources */,
 				ED0E03122A947924002817C9 /* LocationViewController.swift in Sources */,
 				ED4BD0552A9309FF009C81EC /* AppDelegate.swift in Sources */,
+				EDE518452A95CCF600C16C9E /* CinemaViewController.swift in Sources */,
 				ED4BD0572A9309FF009C81EC /* SceneDelegate.swift in Sources */,
 				EDE518322A94A90100C16C9E /* Example2ViewController.swift in Sources */,
 				EDE5183F2A94F11000C16C9E /* TextChatTableViewCell.swift in Sources */,
