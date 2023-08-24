@@ -12,7 +12,6 @@
 		ED4BD0552A9309FF009C81EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD0542A9309FF009C81EC /* AppDelegate.swift */; };
 		ED4BD0572A9309FF009C81EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD0562A9309FF009C81EC /* SceneDelegate.swift */; };
 		ED4BD0592A9309FF009C81EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD0582A9309FF009C81EC /* ViewController.swift */; };
-		ED4BD05C2A9309FF009C81EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4BD05A2A9309FF009C81EC /* Main.storyboard */; };
 		ED4BD05E2A930A00009C81EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4BD05D2A930A00009C81EC /* Assets.xcassets */; };
 		ED4BD0612A930A00009C81EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4BD05F2A930A00009C81EC /* LaunchScreen.storyboard */; };
 		EDCCD8442A944618006EDC06 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EDCCD8432A944618006EDC06 /* SnapKit */; };
@@ -29,6 +28,11 @@
 		EDE518432A94F2E800C16C9E /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518422A94F2E800C16C9E /* ReusableProtocol.swift */; };
 		EDE518452A95CCF600C16C9E /* TheaterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518442A95CCF600C16C9E /* TheaterViewController.swift */; };
 		EDE518472A95D11600C16C9E /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518462A95D11600C16C9E /* Theater.swift */; };
+		EDE518632A976F1600C16C9E /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518622A976F1600C16C9E /* GenericViewController.swift */; };
+		EDE518652A976F2200C16C9E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518642A976F2200C16C9E /* UIViewController+Extension.swift */; };
+		EDE518682A978F5000C16C9E /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518672A978F5000C16C9E /* CustomViewController.swift */; };
+		EDE5186A2A9790D700C16C9E /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518692A9790D700C16C9E /* BlackRadiusTextField.swift */; };
+		EDE5186E2A9796F800C16C9E /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5186D2A9796F800C16C9E /* CustomTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +42,6 @@
 		ED4BD0542A9309FF009C81EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4BD0562A9309FF009C81EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ED4BD0582A9309FF009C81EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ED4BD05B2A9309FF009C81EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4BD05D2A930A00009C81EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4BD0602A930A00009C81EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED4BD0622A930A00009C81EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +58,11 @@
 		EDE518422A94F2E800C16C9E /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
 		EDE518442A95CCF600C16C9E /* TheaterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheaterViewController.swift; sourceTree = "<group>"; };
 		EDE518462A95D11600C16C9E /* Theater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
+		EDE518622A976F1600C16C9E /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		EDE518642A976F2200C16C9E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		EDE518672A978F5000C16C9E /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		EDE518692A9790D700C16C9E /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
+		EDE5186D2A9796F800C16C9E /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +97,11 @@
 			isa = PBXGroup;
 			children = (
 				EDE518282A94987C00C16C9E /* Application */,
-				ED4BD05A2A9309FF009C81EC /* Main.storyboard */,
 				ED4BD0582A9309FF009C81EC /* ViewController.swift */,
 				ED0E03112A947924002817C9 /* LocationViewController.swift */,
 				EDE5182A2A94990000C16C9E /* Assignment */,
+				EDE518612A976F0600C16C9E /* Generic */,
+				EDE518662A978F2F00C16C9E /* CustomView */,
 				EDCCD8472A944658006EDC06 /* Test */,
 				EDE518292A94988600C16C9E /* Resources */,
 			);
@@ -186,6 +195,25 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		EDE518612A976F0600C16C9E /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				EDE518622A976F1600C16C9E /* GenericViewController.swift */,
+				EDE518642A976F2200C16C9E /* UIViewController+Extension.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		EDE518662A978F2F00C16C9E /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EDE518672A978F5000C16C9E /* CustomViewController.swift */,
+				EDE518692A9790D700C16C9E /* BlackRadiusTextField.swift */,
+				EDE5186D2A9796F800C16C9E /* CustomTableViewController.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -252,7 +280,6 @@
 			files = (
 				ED4BD0612A930A00009C81EC /* LaunchScreen.storyboard in Resources */,
 				ED4BD05E2A930A00009C81EC /* Assets.xcassets in Resources */,
-				ED4BD05C2A9309FF009C81EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,32 +296,29 @@
 				EDE518472A95D11600C16C9E /* Theater.swift in Sources */,
 				ED0E03102A945CAC002817C9 /* TextViewController.swift in Sources */,
 				EDE5182C2A94991200C16C9E /* Example1ViewController.swift in Sources */,
+				EDE518632A976F1600C16C9E /* GenericViewController.swift in Sources */,
 				EDCCD8462A94463F006EDC06 /* SnapViewController.swift in Sources */,
+				EDE518652A976F2200C16C9E /* UIViewController+Extension.swift in Sources */,
 				EDE518432A94F2E800C16C9E /* ReusableProtocol.swift in Sources */,
 				EDE518362A94AD0600C16C9E /* ProfileButtonConfiguration.swift in Sources */,
+				EDE5186A2A9790D700C16C9E /* BlackRadiusTextField.swift in Sources */,
 				ED4BD0592A9309FF009C81EC /* ViewController.swift in Sources */,
 				ED0E03122A947924002817C9 /* LocationViewController.swift in Sources */,
 				ED4BD0552A9309FF009C81EC /* AppDelegate.swift in Sources */,
 				EDE518452A95CCF600C16C9E /* TheaterViewController.swift in Sources */,
+				EDE518682A978F5000C16C9E /* CustomViewController.swift in Sources */,
 				ED4BD0572A9309FF009C81EC /* SceneDelegate.swift in Sources */,
 				EDE518322A94A90100C16C9E /* Example2ViewController.swift in Sources */,
 				EDE5183F2A94F11000C16C9E /* TextChatTableViewCell.swift in Sources */,
 				EDE518412A94F11B00C16C9E /* ImageChatTableViewCell.swift in Sources */,
 				EDE518342A94AAC600C16C9E /* Exampl2Images.swift in Sources */,
+				EDE5186E2A9796F800C16C9E /* CustomTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ED4BD05A2A9309FF009C81EC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ED4BD05B2A9309FF009C81EC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ED4BD05F2A930A00009C81EC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,7 +457,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 날씨에 대한 정보를 가지고 오기 위해 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,7 +485,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 날씨에 대한 정보를 가지고 오기 위해 위치 정보가 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

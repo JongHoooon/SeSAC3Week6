@@ -152,7 +152,8 @@ class ViewController: UIViewController {
     @objc
     func signButtonClicked() {
         
-//        let vc = TextViewController()
+        let vc = TextViewController()
+        let nav = UINavigationController(rootViewController: vc)
         
 //        let vc = LocationViewController()
 //        let nav = UINavigationController(rootViewController: vc)
@@ -162,10 +163,16 @@ class ViewController: UIViewController {
 //        let vc = UINavigationController(rootViewController: Example3ViewController())
 //        vc.modalPresentationStyle = .fullScreen
         
-        let vc = UINavigationController(rootViewController: TheaterViewController())
-        vc.modalPresentationStyle = .fullScreen
+//        let vc = UINavigationController(rootViewController: TheaterViewController())
+//        vc.modalPresentationStyle = .fullScreen
         
-        present(vc, animated: true)
+//        present(nav, animated: true)
+        
+        transition(
+            viewController: GenericViewController.self,
+            storyboard: "Main",
+            style: .presentNavigation
+        )
     }
     
     func setNSLayoutAnchor() {

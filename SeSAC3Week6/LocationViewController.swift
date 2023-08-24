@@ -113,6 +113,9 @@ final class LocationViewController: UIViewController {
             mapView.addAnnotations([annotation1, annotation2])
         } else if type == 1 {
             
+            // mapView.removeAnnotation(annotation1) -> 삭제 되지 않음
+            // 위에서 만든 annotation1과 다른 값을 가르키고있어서 삭제 안됨
+            
             mapView.removeAnnotations(mapView.annotations)
             mapView.addAnnotations([annotation2])
         }

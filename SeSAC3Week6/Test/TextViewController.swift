@@ -11,6 +11,9 @@ import SnapKit
 
 final class TextViewController: UIViewController {
     
+    // 1.
+    let picker = UIImagePickerController()
+    
     let photoImageView = {
         let imageView = UIImageView()
         imageView.backgroundColor = .systemGray
@@ -35,7 +38,29 @@ final class TextViewController: UIViewController {
         
         view.backgroundColor = .systemBackground
     
+        picker.delegate = self
         configureConstraints()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        /*
+        // 2. available
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            print("갤러리 사용 불가, 사용자에게 토스트/얼럿")
+            return
+        }
+        
+        // 카메라는 권한 필요함!
+        picker.sourceType = .camera
+        picker.allowsEditing = true
+         */
+        
+//        let picker = UIFontPickerViewController()
+//        let picker = UIColorPickerViewController()
+        
+        present(picker, animated: true)
     }
     
     func configureConstraints() {
@@ -57,6 +82,27 @@ final class TextViewController: UIViewController {
             $0.leadingMargin.equalTo(20.0)
             $0.trailingMargin.equalTo(-20.0)
             $0.height.equalTo(50.0)
+        }
+    }
+}
+
+extension TextViewController: UIImagePickerControllerDelegate,
+                              UINavigationControllerDelegate {
+    
+    // 취소 버튼 클릭 시
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true)
+        print(#function)
+    }
+    
+    // 사진을 선택하거나 카메라 촬영 직후 호출
+    func imagePickerController(
+        _ picker: UIImagePickerController,
+        didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]
+    ) {
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+            self.photoImageView.image = image
+            dismiss(animated: true)
         }
     }
 }
