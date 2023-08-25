@@ -36,6 +36,8 @@
 		EDE518722A982AE600C16C9E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518712A982AE600C16C9E /* CustomTableViewCell.swift */; };
 		EDE518742A9840AB00C16C9E /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518732A9840AB00C16C9E /* PosterImageView.swift */; };
 		EDE518772A984B5600C16C9E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518762A984B5600C16C9E /* OnboardingViewController.swift */; };
+		EDE5187A2A986DF500C16C9E /* NetflixSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518792A986DF500C16C9E /* NetflixSignupViewController.swift */; };
+		EDE5187C2A986E2F00C16C9E /* SignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5187B2A986E2F00C16C9E /* SignupTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +71,8 @@
 		EDE518712A982AE600C16C9E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		EDE518732A9840AB00C16C9E /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
 		EDE518762A984B5600C16C9E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EDE518792A986DF500C16C9E /* NetflixSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixSignupViewController.swift; sourceTree = "<group>"; };
+		EDE5187B2A986E2F00C16C9E /* SignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 				EDE518302A94A8D300C16C9E /* Example2 */,
 				EDE518382A94D82C00C16C9E /* Example3 */,
 				EDE518372A94D7C400C16C9E /* Cinema */,
+				EDE518782A986DC400C16C9E /* Netfix */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -229,6 +234,15 @@
 				EDE518762A984B5600C16C9E /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EDE518782A986DC400C16C9E /* Netfix */ = {
+			isa = PBXGroup;
+			children = (
+				EDE518792A986DF500C16C9E /* NetflixSignupViewController.swift */,
+				EDE5187B2A986E2F00C16C9E /* SignupTextField.swift */,
+			);
+			path = Netfix;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,11 +332,13 @@
 				EDE518652A976F2200C16C9E /* UIViewController+Extension.swift in Sources */,
 				EDE518432A94F2E800C16C9E /* ReusableProtocol.swift in Sources */,
 				EDE518362A94AD0600C16C9E /* ProfileButtonConfiguration.swift in Sources */,
+				EDE5187C2A986E2F00C16C9E /* SignupTextField.swift in Sources */,
 				EDE5186A2A9790D700C16C9E /* BlackRadiusTextField.swift in Sources */,
 				ED4BD0592A9309FF009C81EC /* ViewController.swift in Sources */,
 				EDE518772A984B5600C16C9E /* OnboardingViewController.swift in Sources */,
 				ED0E03122A947924002817C9 /* LocationViewController.swift in Sources */,
 				EDE518742A9840AB00C16C9E /* PosterImageView.swift in Sources */,
+				EDE5187A2A986DF500C16C9E /* NetflixSignupViewController.swift in Sources */,
 				ED4BD0552A9309FF009C81EC /* AppDelegate.swift in Sources */,
 				EDE518452A95CCF600C16C9E /* TheaterViewController.swift in Sources */,
 				EDE518682A978F5000C16C9E /* CustomViewController.swift in Sources */,

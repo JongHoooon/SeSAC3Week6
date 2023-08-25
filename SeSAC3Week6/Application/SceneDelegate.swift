@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        let vc = GenericViewController()
 //        let vc = CustomViewController()
 //        let vc = CustomTableViewController()
-        let vc = OnboardingViewController()
+//        let vc = OnboardingViewController()
+        let vc = UINavigationController(rootViewController: NetflixSignupViewController())
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }
