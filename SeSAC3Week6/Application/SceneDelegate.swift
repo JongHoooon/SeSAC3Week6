@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: scene)
 //        let vc = GenericViewController()
 //        let vc = CustomViewController()
-        let vc = CustomTableViewController()
+//        let vc = CustomTableViewController()
+        let vc = OnboardingViewController()
         window?.rootViewController = vc
         window?.makeKeyAndVisible()
     }

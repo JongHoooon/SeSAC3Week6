@@ -15,10 +15,27 @@ struct Sample {
 
 final class CustomTableViewController: UIViewController {
     
-    private let tableView: UITableView = {
+    // viewDidLoad 보다 클로저 구문이 먼저 실행이 됨
+    // CustomTableViewController 인스턴스 생성 직전에 클로저 구문이 우선 실행
+    lazy var tableView: UITableView = {
         let view = UITableView()
         view.rowHeight = UITableView.automaticDimension // 1. 셀 높이 유동적으로 설정
+        
+        view.delegate = self
+        view.dataSource = self
+        view.register(
+            CustomTableViewCell.self,
+            forCellReuseIdentifier: "CustomCell"
+        )
+        
         return view
+    }()
+    
+    let imageView: UIImageView = {
+        // 내부에 subview가 있어서 초기화시 frame 설정이 필요하다.
+        let imageView = PosterImageView(frame: .zero)
+        
+        return imageView
     }()
     
 //    private var isExpand = false // false 2, true 0
@@ -40,11 +57,21 @@ final class CustomTableViewController: UIViewController {
             $0.edges.equalToSuperview()
         }
         
+        // self >>> 자기 자신의 인스턴스
         tableView.delegate = self
         tableView.dataSource = self
         // uinib - xib 파일
         // 
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "CustomCell")
+        tableView.register(
+            CustomTableViewCell.self,
+            forCellReuseIdentifier: "CustomCell"
+        )
+        
+        view.addSubview(imageView)
+        imageView.snp.makeConstraints {
+            $0.size.equalTo(200.0)
+            $0.center.equalTo(view)
+        }
     }
 }
 
@@ -61,12 +88,11 @@ extension CustomTableViewController: UITableViewDelegate, UITableViewDataSource 
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell")!
-        cell.textLabel?.text = list[indexPath.row].text
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell") as! CustomTableViewCell
+        cell.label.text = list[indexPath.row].text
         // 2. number of lines  // 3. 레이아웃 늘어날 수 있게 잘 만들어준다.
 //        cell.textLabel?.numberOfLines =  ? 0 : 2
-        
-        cell.textLabel?.numberOfLines = list[indexPath.row].isExpand ? 0 : 2
+        cell.label.numberOfLines = list[indexPath.row].isExpand ? 0 : 2
         return cell
     }
     

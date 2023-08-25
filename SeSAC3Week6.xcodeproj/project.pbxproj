@@ -33,6 +33,9 @@
 		EDE518682A978F5000C16C9E /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518672A978F5000C16C9E /* CustomViewController.swift */; };
 		EDE5186A2A9790D700C16C9E /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518692A9790D700C16C9E /* BlackRadiusTextField.swift */; };
 		EDE5186E2A9796F800C16C9E /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5186D2A9796F800C16C9E /* CustomTableViewController.swift */; };
+		EDE518722A982AE600C16C9E /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518712A982AE600C16C9E /* CustomTableViewCell.swift */; };
+		EDE518742A9840AB00C16C9E /* PosterImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518732A9840AB00C16C9E /* PosterImageView.swift */; };
+		EDE518772A984B5600C16C9E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518762A984B5600C16C9E /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		EDE518672A978F5000C16C9E /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		EDE518692A9790D700C16C9E /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
 		EDE5186D2A9796F800C16C9E /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		EDE518712A982AE600C16C9E /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		EDE518732A9840AB00C16C9E /* PosterImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterImageView.swift; sourceTree = "<group>"; };
+		EDE518762A984B5600C16C9E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 		ED4BD0532A9309FF009C81EC /* SeSAC3Week6 */ = {
 			isa = PBXGroup;
 			children = (
+				EDE518752A984B1100C16C9E /* Onboarding */,
 				EDE518282A94987C00C16C9E /* Application */,
 				ED4BD0582A9309FF009C81EC /* ViewController.swift */,
 				ED0E03112A947924002817C9 /* LocationViewController.swift */,
@@ -210,8 +217,18 @@
 				EDE518672A978F5000C16C9E /* CustomViewController.swift */,
 				EDE518692A9790D700C16C9E /* BlackRadiusTextField.swift */,
 				EDE5186D2A9796F800C16C9E /* CustomTableViewController.swift */,
+				EDE518732A9840AB00C16C9E /* PosterImageView.swift */,
+				EDE518712A982AE600C16C9E /* CustomTableViewCell.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EDE518752A984B1100C16C9E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				EDE518762A984B5600C16C9E /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +320,14 @@
 				EDE518362A94AD0600C16C9E /* ProfileButtonConfiguration.swift in Sources */,
 				EDE5186A2A9790D700C16C9E /* BlackRadiusTextField.swift in Sources */,
 				ED4BD0592A9309FF009C81EC /* ViewController.swift in Sources */,
+				EDE518772A984B5600C16C9E /* OnboardingViewController.swift in Sources */,
 				ED0E03122A947924002817C9 /* LocationViewController.swift in Sources */,
+				EDE518742A9840AB00C16C9E /* PosterImageView.swift in Sources */,
 				ED4BD0552A9309FF009C81EC /* AppDelegate.swift in Sources */,
 				EDE518452A95CCF600C16C9E /* TheaterViewController.swift in Sources */,
 				EDE518682A978F5000C16C9E /* CustomViewController.swift in Sources */,
 				ED4BD0572A9309FF009C81EC /* SceneDelegate.swift in Sources */,
+				EDE518722A982AE600C16C9E /* CustomTableViewCell.swift in Sources */,
 				EDE518322A94A90100C16C9E /* Example2ViewController.swift in Sources */,
 				EDE5183F2A94F11000C16C9E /* TextChatTableViewCell.swift in Sources */,
 				EDE518412A94F11B00C16C9E /* ImageChatTableViewCell.swift in Sources */,
