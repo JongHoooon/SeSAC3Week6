@@ -38,6 +38,11 @@
 		EDE518772A984B5600C16C9E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518762A984B5600C16C9E /* OnboardingViewController.swift */; };
 		EDE5187A2A986DF500C16C9E /* NetflixSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518792A986DF500C16C9E /* NetflixSignupViewController.swift */; };
 		EDE5187C2A986E2F00C16C9E /* SignupTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5187B2A986E2F00C16C9E /* SignupTextField.swift */; };
+		EDE5187E2A98783B00C16C9E /* NetflixMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5187D2A98783B00C16C9E /* NetflixMainViewController.swift */; };
+		EDE518822A987A8200C16C9E /* TopMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518812A987A8100C16C9E /* TopMenuButton.swift */; };
+		EDE518842A987EE300C16C9E /* PreviewImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518832A987EE300C16C9E /* PreviewImageView.swift */; };
+		EDE518862A987FAF00C16C9E /* NetflixImageSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518852A987FAF00C16C9E /* NetflixImageSpace.swift */; };
+		EDE518882A988EB200C16C9E /* MiddleMenuButtonConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE518872A988EB200C16C9E /* MiddleMenuButtonConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +78,11 @@
 		EDE518762A984B5600C16C9E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		EDE518792A986DF500C16C9E /* NetflixSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixSignupViewController.swift; sourceTree = "<group>"; };
 		EDE5187B2A986E2F00C16C9E /* SignupTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTextField.swift; sourceTree = "<group>"; };
+		EDE5187D2A98783B00C16C9E /* NetflixMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixMainViewController.swift; sourceTree = "<group>"; };
+		EDE518812A987A8100C16C9E /* TopMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMenuButton.swift; sourceTree = "<group>"; };
+		EDE518832A987EE300C16C9E /* PreviewImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageView.swift; sourceTree = "<group>"; };
+		EDE518852A987FAF00C16C9E /* NetflixImageSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixImageSpace.swift; sourceTree = "<group>"; };
+		EDE518872A988EB200C16C9E /* MiddleMenuButtonConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleMenuButtonConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,10 +249,31 @@
 		EDE518782A986DC400C16C9E /* Netfix */ = {
 			isa = PBXGroup;
 			children = (
+				EDE5187F2A987A5900C16C9E /* SignupView */,
+				EDE518802A987A6100C16C9E /* MainView */,
+			);
+			path = Netfix;
+			sourceTree = "<group>";
+		};
+		EDE5187F2A987A5900C16C9E /* SignupView */ = {
+			isa = PBXGroup;
+			children = (
 				EDE518792A986DF500C16C9E /* NetflixSignupViewController.swift */,
 				EDE5187B2A986E2F00C16C9E /* SignupTextField.swift */,
 			);
-			path = Netfix;
+			path = SignupView;
+			sourceTree = "<group>";
+		};
+		EDE518802A987A6100C16C9E /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				EDE5187D2A98783B00C16C9E /* NetflixMainViewController.swift */,
+				EDE518812A987A8100C16C9E /* TopMenuButton.swift */,
+				EDE518872A988EB200C16C9E /* MiddleMenuButtonConfiguration.swift */,
+				EDE518832A987EE300C16C9E /* PreviewImageView.swift */,
+				EDE518852A987FAF00C16C9E /* NetflixImageSpace.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,17 +369,22 @@
 				EDE518772A984B5600C16C9E /* OnboardingViewController.swift in Sources */,
 				ED0E03122A947924002817C9 /* LocationViewController.swift in Sources */,
 				EDE518742A9840AB00C16C9E /* PosterImageView.swift in Sources */,
+				EDE518882A988EB200C16C9E /* MiddleMenuButtonConfiguration.swift in Sources */,
 				EDE5187A2A986DF500C16C9E /* NetflixSignupViewController.swift in Sources */,
 				ED4BD0552A9309FF009C81EC /* AppDelegate.swift in Sources */,
 				EDE518452A95CCF600C16C9E /* TheaterViewController.swift in Sources */,
 				EDE518682A978F5000C16C9E /* CustomViewController.swift in Sources */,
 				ED4BD0572A9309FF009C81EC /* SceneDelegate.swift in Sources */,
 				EDE518722A982AE600C16C9E /* CustomTableViewCell.swift in Sources */,
+				EDE518842A987EE300C16C9E /* PreviewImageView.swift in Sources */,
 				EDE518322A94A90100C16C9E /* Example2ViewController.swift in Sources */,
 				EDE5183F2A94F11000C16C9E /* TextChatTableViewCell.swift in Sources */,
 				EDE518412A94F11B00C16C9E /* ImageChatTableViewCell.swift in Sources */,
+				EDE518862A987FAF00C16C9E /* NetflixImageSpace.swift in Sources */,
+				EDE518822A987A8200C16C9E /* TopMenuButton.swift in Sources */,
 				EDE518342A94AAC600C16C9E /* Exampl2Images.swift in Sources */,
 				EDE5186E2A9796F800C16C9E /* CustomTableViewController.swift in Sources */,
+				EDE5187E2A98783B00C16C9E /* NetflixMainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

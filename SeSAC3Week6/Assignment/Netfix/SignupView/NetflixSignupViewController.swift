@@ -43,6 +43,7 @@ final class NetflixSignupViewController: UIViewController {
     private let moreInfoSwitch: UISwitch = {
         let moreInfoSwitch = UISwitch()
         moreInfoSwitch.onTintColor = .systemOrange
+        moreInfoSwitch.isOn = true
         return moreInfoSwitch
     }()
     
@@ -114,6 +115,21 @@ private extension NetflixSignupViewController {
     
     @objc
     func signupButtonTapped() {
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let sceneDelegate = windowScene?.delegate as? SceneDelegate
+
+        let vc = NetflixMainViewController()
         
+        sceneDelegate?.window?.rootViewController = vc
+        sceneDelegate?.window?.makeKeyAndVisible()
+        
+        guard let window = sceneDelegate?.window else { return }
+        
+        UIView.transition(
+            with: window,
+            duration: 0.3,
+            options: [.transitionCrossDissolve],
+            animations: nil
+        )
     }
 }
