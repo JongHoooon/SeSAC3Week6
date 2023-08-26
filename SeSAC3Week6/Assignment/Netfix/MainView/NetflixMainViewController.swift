@@ -121,7 +121,7 @@ private extension NetflixMainViewController {
         }
         
         logoLabel.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(32.0)
+            $0.top.equalTo(view.safeAreaLayoutGuide).inset(32.0)
             $0.leading.equalToSuperview().inset(8.0)
         }
         logoLabel.setContentHuggingPriority(.defaultHigh, for: .horizontal)
@@ -134,7 +134,7 @@ private extension NetflixMainViewController {
         topMenuStackView.setContentHuggingPriority(.defaultLow, for: .horizontal)
         
         previewStackView.snp.makeConstraints {
-            $0.bottom.equalToSuperview().inset(32.0)
+            $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(32.0)
             $0.horizontalEdges.equalToSuperview(.init(8.0))
         }
         previewLabel.snp.makeConstraints {
