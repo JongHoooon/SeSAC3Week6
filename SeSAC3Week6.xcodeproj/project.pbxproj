@@ -14,6 +14,8 @@
 		ED4BD0592A9309FF009C81EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4BD0582A9309FF009C81EC /* ViewController.swift */; };
 		ED4BD05E2A930A00009C81EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4BD05D2A930A00009C81EC /* Assets.xcassets */; };
 		ED4BD0612A930A00009C81EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4BD05F2A930A00009C81EC /* LaunchScreen.storyboard */; };
+		ED6E20142AB05C8D008D34F2 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6E20132AB05C8D008D34F2 /* Observable.swift */; };
+		ED6E20162AB05D86008D34F2 /* NetflixSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6E20152AB05D86008D34F2 /* NetflixSignupViewModel.swift */; };
 		EDCCD8442A944618006EDC06 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EDCCD8432A944618006EDC06 /* SnapKit */; };
 		EDCCD8462A94463F006EDC06 /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCCD8452A94463F006EDC06 /* SnapViewController.swift */; };
 		EDE5182C2A94991200C16C9E /* Example1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDE5182B2A94991200C16C9E /* Example1ViewController.swift */; };
@@ -55,6 +57,8 @@
 		ED4BD05D2A930A00009C81EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED4BD0602A930A00009C81EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED4BD0622A930A00009C81EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED6E20132AB05C8D008D34F2 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		ED6E20152AB05D86008D34F2 /* NetflixSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetflixSignupViewModel.swift; sourceTree = "<group>"; };
 		EDCCD8452A94463F006EDC06 /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
 		EDE5182B2A94991200C16C9E /* Example1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1ViewController.swift; sourceTree = "<group>"; };
 		EDE5182D2A949A3400C16C9E /* Example1TextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example1TextFiled.swift; sourceTree = "<group>"; };
@@ -259,7 +263,9 @@
 			isa = PBXGroup;
 			children = (
 				EDE518792A986DF500C16C9E /* NetflixSignupViewController.swift */,
+				ED6E20152AB05D86008D34F2 /* NetflixSignupViewModel.swift */,
 				EDE5187B2A986E2F00C16C9E /* SignupTextField.swift */,
+				ED6E20132AB05C8D008D34F2 /* Observable.swift */,
 			);
 			path = SignupView;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 				EDE518432A94F2E800C16C9E /* ReusableProtocol.swift in Sources */,
 				EDE518362A94AD0600C16C9E /* ProfileButtonConfiguration.swift in Sources */,
 				EDE5187C2A986E2F00C16C9E /* SignupTextField.swift in Sources */,
+				ED6E20142AB05C8D008D34F2 /* Observable.swift in Sources */,
 				EDE5186A2A9790D700C16C9E /* BlackRadiusTextField.swift in Sources */,
 				ED4BD0592A9309FF009C81EC /* ViewController.swift in Sources */,
 				EDE518772A984B5600C16C9E /* OnboardingViewController.swift in Sources */,
@@ -377,6 +384,7 @@
 				ED4BD0572A9309FF009C81EC /* SceneDelegate.swift in Sources */,
 				EDE518722A982AE600C16C9E /* CustomTableViewCell.swift in Sources */,
 				EDE518842A987EE300C16C9E /* PreviewImageView.swift in Sources */,
+				ED6E20162AB05D86008D34F2 /* NetflixSignupViewModel.swift in Sources */,
 				EDE518322A94A90100C16C9E /* Example2ViewController.swift in Sources */,
 				EDE5183F2A94F11000C16C9E /* TextChatTableViewCell.swift in Sources */,
 				EDE518412A94F11B00C16C9E /* ImageChatTableViewCell.swift in Sources */,

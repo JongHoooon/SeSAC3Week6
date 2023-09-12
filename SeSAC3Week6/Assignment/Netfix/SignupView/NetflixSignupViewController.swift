@@ -9,6 +9,8 @@ import UIKit
 
 final class NetflixSignupViewController: UIViewController {
     
+    private let viewModel = NetflixSignupViewModel()
+    
     // MARK: - UI
     private let textFieldStackView: UIStackView = {
         let stackView = UIStackView()
@@ -54,12 +56,76 @@ final class NetflixSignupViewController: UIViewController {
         configureNavigationBar()
         configureLayout()
         addAction()
+        
+        idTextField.addTarget(
+            self,
+            action: #selector(idInput),
+            for: .editingChanged
+        )
+        passwordTextField.addTarget(
+            self,
+            action: #selector(passwordInput),
+            for: .editingChanged
+        )
+        nicknameTextField.addTarget(
+            self,
+            action: #selector(nicknameInput),
+            for: .editingChanged
+        )
+        locationTextField.addTarget(
+            self,
+            action: #selector(locationInput),
+            for: .editingChanged
+        )
+        recommendtaionTextField.addTarget(
+            self,
+            action: #selector(recommendationInput),
+            for: .editingChanged
+        )
+        
+        viewModel.isSingUpButtonEnable
+            .bind { [weak self] isEnable in
+                self?.signupButton.isEnabled = isEnable
+                switch isEnable {
+                case true:
+                    self?.signupButton.backgroundColor = .white
+                    
+                case false:
+                    self?.signupButton.backgroundColor = .gray
+                }
+            }
     }
 }
 
 // MARK: - Private
 private extension NetflixSignupViewController {
     
+    @objc
+    func idInput() {
+        viewModel.id.value = idTextField.text ?? ""
+        viewModel.checkValidation()
+    }
+    @objc
+    func passwordInput() {
+        viewModel.password.value = passwordTextField.text ?? ""
+        viewModel.checkValidation()
+    }
+    @objc
+    func nicknameInput() {
+        viewModel.nickname.value = nicknameTextField.text ?? ""
+        viewModel.checkValidation()
+     }
+    @objc
+    func locationInput() {
+        viewModel.location.value = locationTextField.text ?? ""
+        viewModel.checkValidation()
+    }
+    @objc
+    func recommendationInput() {
+        viewModel.recommendation.value = recommendtaionTextField.text ?? ""
+        viewModel.checkValidation()
+    }
+
     func addAction() {
         signupButton.addTarget(
             self,
@@ -115,21 +181,19 @@ private extension NetflixSignupViewController {
     
     @objc
     func signupButtonTapped() {
-        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
-        let sceneDelegate = windowScene?.delegate as? SceneDelegate
-
-        let vc = NetflixMainViewController()
-        
-        sceneDelegate?.window?.rootViewController = vc
-        sceneDelegate?.window?.makeKeyAndVisible()
-        
-        guard let window = sceneDelegate?.window else { return }
-        
-        UIView.transition(
-            with: window,
-            duration: 0.3,
-            options: [.transitionCrossDissolve],
-            animations: nil
-        )
+        viewModel.signup {
+            let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+            let sceneDelegate = windowScene?.delegate as? SceneDelegate
+            let vc = NetflixMainViewController()
+            sceneDelegate?.window?.rootViewController = vc
+            sceneDelegate?.window?.makeKeyAndVisible()
+            guard let window = sceneDelegate?.window else { return }
+            UIView.transition(
+                with: window,
+                duration: 0.3,
+                options: [.transitionCrossDissolve],
+                animations: nil
+            )
+        }
     }
 }
